@@ -18,8 +18,9 @@ const LandingPage = () => {
       <button className='cta-btn' onClick={handleGetStarted}>
             Get Started
           </button>
+          <AboutUs />
     </div>
-    <AboutUs />
+    
     </div>
     </div>
   );
