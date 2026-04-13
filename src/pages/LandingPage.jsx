@@ -18,6 +18,7 @@ const LandingPage = () => {
             Get Started
           </button>
     </div>
+    <AboutUs />
     </div>
     </div>
   );
