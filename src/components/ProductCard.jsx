@@ -5,6 +5,9 @@ import './ProductCard.css';
 
 const ProductCard = ({ plant }) => {
     const dispatch = useDispatch();
+    // Check if this specific plant is already in the cart
+    const cartItems = useSelector(state => state.cart.items);
+    const isAdded = cartItems.some(item => item.name === plant.name);
 
     const handleAddToCart = () => {
         //Send the plant object to our Redux store
@@ -18,7 +21,7 @@ const ProductCard = ({ plant }) => {
             <h3>{plant.name}</h3>
             <p>{plant.description}</p>
             <p><strong>${plant.price}</strong></p>
-            <button className="product-container-btn" onClick={handleAddToCart}>Add to Cart</button>
+            <button className="product-container-btn" onClick={handleAddToCart}>{isAdded ? "Added to Cart" : "Add to Cart"}</button>
         </div>
     );
 };
