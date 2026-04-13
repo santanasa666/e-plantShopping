@@ -1,9 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './pages/LandingPage';
 import ProductList from './pages/ProductList';
 import CartPage from './pages/CartPage';
-import Header from './components/Header'; // We'll create this next!
+import Header from './components/Header'; 
 
 function App() {
   return (
