@@ -8,11 +8,32 @@ const CartPage = () => {
     const cartItems = useSelector(state => state.cart.items);
     const dispatch = useDispatch();
 
+    // Local state for basic feedback/error messaging
+    const [message, setMessage] = useState('');
+
     //calculate total cost
     const calculateTotal = () => {
         return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
     };
 
+    const handleRemove = (id, name) => {
+    try {
+      dispatch(removeItem(id));
+      setMessage(`${name} removed from cart.`);
+      // Clear message after 3 seconds
+      setTimeout(() => setMessage(''), 3000);
+    } catch (error) {
+      setMessage('Failed to remove item. Please try again.');
+    }
+  };
+
+  const handleCheckout = () => {
+    if (cartItems.length === 0) {
+      setMessage('Your cart is empty. Add items before checking out.');
+      return;
+    }
+    alert('Coming Soon!');
+  };
 
 
     return (
