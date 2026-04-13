@@ -5,7 +5,7 @@ import './header.css';
 
 const Header = () => {
   // Grab the totalQuantity from our Redux cart state
-  const totalQuantity = useSelector(state => state.cart.totalQuantity);
+  const totalQuantity = useSelector(state => state.cart.items.reduce((total, item) => total + item.quantity, 0));
 
   return (
     <nav className='navBar'>

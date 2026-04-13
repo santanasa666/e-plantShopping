@@ -1,16 +1,44 @@
-# React + Vite
+# 🌿 Paradise Nursery - Houseplant Shopping Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📋 Project Information
+**Project Name:** Paradise Nursery
+**Developer:** santanasa666
+**Environment:** React + Vite
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Overview
+Paradise Nursery is a responsive, multi-page React application designed for houseplant enthusiasts. It allows users to explore a diverse collection of plants, categorize them by their needs (Low Light, High Humidity, Succulents), and manage a shopping cart for their potential greenery additions.
 
-## React Compiler
+## 🚀 Live Demo
+You can view the live application here: [https://santanasa666.github.io/e-plantShopping/]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- **Landing Page**: An immersive welcome screen with a lush background and an introduction to our mission.
+- **Product Listing**:
+    - Browse 6+ unique plant species.
+    - Organized into 3 distinct categories.
+    - Real-time "Add to Cart" functionality.
+- **Interactive Shopping Cart**:
+    - Dynamic cart icon in the header showing total item count.
+    - Adjust plant quantities (increase/decrease) directly in the cart.
+    - Automatic calculation of sub-totals and grand total.
+    - Remove individual plant types entirely.
+- **Responsive Navigation**: Seamless transitions between the landing, product, and cart pages using React Router.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **React.js**: Frontend framework.
+- **Vite**: Modern frontend build tool for fast development.
+- **React Router**: For client-side routing and navigation.
+- **Context API**: Global state management for the shopping cart.
+- **CSS3**: Custom styling with a focus on responsive grids and plant-themed aesthetics.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+```text
+src/
+├── components/       # Reusable UI elements (Header, PlantCard, CartItem)
+├── context/          # CartContext for global state management
+├── data/             # Mock inventory data (plants.js)
+├── pages/            # Page components (Landing, ProductList, CartPage)
+├── App.jsx           # Main routing configuration
+└── main.jsx          # App entry point and Context Provider wrapping

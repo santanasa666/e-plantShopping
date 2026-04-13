@@ -13,7 +13,7 @@ const LandingPage = () => {
     <div className="landing-page">
         <div className='landing-page-content'>
             <div className='landing'>
-      <h1 className='landing-page-title'>Paradise Nursery</h1>
+      <h1 className='landing-page-title'>Welcome to Paradise Nursery</h1>
       <p>Where Greenery Meets Your Home</p>
       <button className='cta-btn' onClick={handleGetStarted}>
             Get Started
