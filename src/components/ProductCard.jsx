@@ -26,8 +26,7 @@ const ProductCard = ({ plant }) => {
                 className="product-container-btn" 
                 onClick={handleAddToCart}
                 // This attribute is key for the rubric requirement:
-                disabled={isAdded} 
-            >
+                disabled={isAdded}>
                 {isAdded ? "Added to Cart" : "Add to Cart"}
             </button>
         </div>

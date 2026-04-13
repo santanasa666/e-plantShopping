@@ -11,6 +11,7 @@ const LandingPage = () => {
   };
   return (
     <div className="landing-page">
+       
         <div className='landing-page-content'>
             <div className='landing'>
       <h1 className='landing-page-title'>Welcome to Paradise Nursery</h1>
@@ -23,6 +24,7 @@ const LandingPage = () => {
     
     </div>
     </div>
+    
   );
 };
 

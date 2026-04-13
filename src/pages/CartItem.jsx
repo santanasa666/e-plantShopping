@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeItem, addItem, updateQuantity } from '../store/cartSlice';
 import { Link } from 'react-router-dom';
@@ -91,4 +91,4 @@ const CartPage = () => {
   );
 };
 
-export default CartItem;
+export default CartPage;
