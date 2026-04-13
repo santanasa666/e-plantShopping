@@ -1,0 +1,56 @@
+.landing-page {
+    background: linear-gradient(160deg, #2d4a22 0%, #4a7c35 50%, #6b9e4a 100%);
+    background-image: url("https://images.unsplash.com/photo-1516528387618-afa90b13e000?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.landin-page-content {
+     max-width: 600px;
+}
+
+.landing h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: #e8f0d8;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.landing h1 em {
+  font-style: italic;
+  color: #a8c97a;
+}
+
+.landing p {
+  color: #b8cfa0;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+
+
+.cta-btn {
+  background: #a8c97a;
+  color: #1a2e0f;
+  border: none;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.cta-btn:hover {
+  background: #bdd98f;
+  transform: translateY(-2px);
+}

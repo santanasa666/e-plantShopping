@@ -1,0 +1,19 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background: #2e7d32;
+    color: white;
+    text-decoration: none;
+
+}
+.navLink-logo {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
